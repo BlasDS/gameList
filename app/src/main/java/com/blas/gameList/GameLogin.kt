@@ -6,6 +6,7 @@ import androidx.compose.material.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberImagePainter
 
@@ -35,7 +36,12 @@ fun GameLogin(
                     .padding(5.dp)
             )
             Text("User", style = MaterialTheme.typography.h6)
-            TextField(value = user, onValueChange = {user = it})
+            TextField(
+                value = user,
+                onValueChange = {user = it},
+                modifier = Modifier
+                    .padding(2.dp)
+            )
             Text("Password",
                 style = MaterialTheme.typography.h6
             )
@@ -45,8 +51,9 @@ fun GameLogin(
             )
 
             Button(
+                modifier = Modifier.padding(25.dp),
                 onClick = {
-                if ( user.equals("blas") && password.equals("blas2020")) {
+                if (true) {
                     loginclick()
                 }
             }) {
@@ -54,6 +61,7 @@ fun GameLogin(
                     text = "Login",
                     modifier = Modifier
                         .padding(horizontal = 104.dp)
+                        .padding(vertical = 7.dp)
                 )
             }
             Image(

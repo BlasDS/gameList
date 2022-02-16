@@ -21,7 +21,6 @@ import coil.annotation.ExperimentalCoilApi
 import coil.compose.rememberImagePainter
 import com.blas.gameList.data.Game
 
-
 @ExperimentalCoilApi
 @Composable
 fun GameView(
@@ -58,7 +57,7 @@ fun GameView(
                     fontWeight = FontWeight.Normal,
                     textAlign = TextAlign.Center
                 )
-                Text(text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum scelerisque viverra. Quisque ipsum magna, efficitur quis purus auctor, lobortis dictum elit. Sed pellentesque fringilla facilisis. Morbi nec magna ipsum. Proin tempus eros vehicula ex lacinia condimentum. Vivamus accumsan sit amet dui sed dapibus. Proin quis tristique lorem, vel congue metus. Sed in mi vel elit pharetra dignissim quis in mauris. Ut tempor ipsum sit amet ornare blandit. Ut molestie viverra rhoncus. Vestibulum tristique vel erat quis dignissim. Phasellus a arcu turpis.",
+                Text(text = game.description,
                     style = MaterialTheme.typography.subtitle1,
                     fontWeight = FontWeight.Normal,
                     textAlign = TextAlign.Justify

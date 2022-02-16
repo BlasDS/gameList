@@ -6,7 +6,6 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import coil.annotation.ExperimentalCoilApi
 import com.blas.gameList.data.DataProvider
-import com.blas.gameList.*
 
 @ExperimentalCoilApi
 @Composable

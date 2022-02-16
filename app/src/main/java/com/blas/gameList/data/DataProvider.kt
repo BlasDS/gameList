@@ -1,8 +1,5 @@
 package com.blas.gameList.data
 
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-
 object DataProvider {
     val gameList = listOf(
         Game(

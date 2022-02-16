@@ -57,7 +57,7 @@ fun GameLogin(
                 )
             }
             Image(
-                painter = rememberImagePainter(data = "https://github.com/BlasDS/gameList/blob/master/app/src/main/res/logo/GameKOLogo.png?raw=true"),
+                painter = rememberImagePainter(data = "https://github.com/BlasDS/gameList/blob/master/app/src/main/res/logo/GamekoNameWhite.png?raw=true"),
                 contentDescription = "logo",
                 modifier = Modifier
                     .fillMaxHeight(0.2f)

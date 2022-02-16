@@ -1,5 +1,6 @@
 package com.blas.gameList
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -8,6 +9,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import coil.compose.rememberImagePainter
 
 @Composable
 fun GameLogin(
@@ -36,7 +38,7 @@ fun GameLogin(
                 Text(text = "Login")
             }
             
-            //Image(painter = rememberImagePainter(request = ), contentDescription = )
+            Image(painter = rememberImagePainter(data = "https://github.com/BlasDS/gameList/blob/master/app/src/main/res/logo/GameKOLogo.png?raw=true"), contentDescription = "logo")
         }
     }
 }
